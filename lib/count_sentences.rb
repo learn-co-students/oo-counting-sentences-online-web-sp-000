@@ -19,6 +19,5 @@ class String
     num2 = self.split.count(&:question?)
     num3 = self.split.count(&:exclamation?)
     num1 + num2 + num3
-    binding.pry
   end
 end

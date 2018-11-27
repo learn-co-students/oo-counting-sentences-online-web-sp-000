@@ -34,7 +34,8 @@ end
 # + :is a greedy operator that returns matches between 1 and unlimited times.
 #(capturing our sentences here and ignoring repetitions like ...)
 
-#matching characters ., ! or ?.
 
-# [\.!?] : In a nutshell, we are capturing all characters that are
+
+# [\.!?] : matching characters ., ! or ?.
+#In a nutshell, we are capturing all characters that are
 #not ., ! or ? till we get characters that are ., ! or ?. Which basically can be treated as a sentence (in broad senses).

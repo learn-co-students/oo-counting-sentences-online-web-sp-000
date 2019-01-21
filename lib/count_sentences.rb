@@ -28,10 +28,11 @@ class String
 
   def count_sentences
     sentences = self.split(/[.][\s]|[?][\s]|[!][\s]/)
-    if sentences == nil
-      0
-    else
-      sentences.length
-    end
+    sentences.length
+    # if sentences == nil
+    #   0
+    # else
+    #   sentences.length
+    # end
   end
 end

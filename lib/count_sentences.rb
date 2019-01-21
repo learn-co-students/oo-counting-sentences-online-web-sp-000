@@ -27,7 +27,6 @@ class String
   end
 
   def count_sentences
-    sentences = []
     sentences = self.split(/[.][\s]|[?][\s]|[!][\s]/)
     if sentences == nil
       0

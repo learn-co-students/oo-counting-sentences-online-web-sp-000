@@ -19,6 +19,6 @@ class String
     new_array.collect do |sentence|
          sentence != " "
       end 
-    new_array.length 
+    new_array.count  
     end
   end

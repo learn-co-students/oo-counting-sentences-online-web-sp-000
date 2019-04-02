@@ -16,10 +16,8 @@ class String
 
   def count_sentences
     new_array = self.split(/\!|\.|\?/)
-   # binding.pry 
     new_array.select do |sentence|
          sentence != " " && sentence != ""
-      
       end.length  
     end
 end

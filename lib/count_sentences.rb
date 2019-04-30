@@ -1,6 +1,5 @@
 require 'pry'
 
-
 class String
 
   def sentence?

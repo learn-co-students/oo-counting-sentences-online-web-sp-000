@@ -18,5 +18,4 @@ class String
     self.split(/[.!?]/).delete_if {|string| string.size < 2}.size   #splits the string on any and all '. ! ?'
                                                           #deletes every element of self for which block evaluates to true.
   end
-    #self.string.length
 end

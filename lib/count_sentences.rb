@@ -17,5 +17,5 @@ class String
   def count_sentences
     self.split(/[.!?]/).delete_if {|string| string.size < 2}.size   #splits the string on any and all '. ! ?'
                                                           #deletes every element of self for which block evaluates to true.
-  end
+  end                                                     #This will remove all punctuation, and return the size
 end

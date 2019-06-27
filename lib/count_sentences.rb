@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class String
 
@@ -17,7 +17,9 @@ class String
   def count_sentences
     count = self.split(/([^\.\?\!]+[\.\?\!]*)/)
     .delete_if {|sentence| sentence == ""}.length
-  
     count
+
+    #alternative solution
+    self.split(/[?!.] /).count
   end
 end

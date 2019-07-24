@@ -15,9 +15,6 @@ class String
   end
 
   def count_sentences
-    punctuation = '.?!'
-    count = 0
-    self.split(" ").each { |word| count += 1 if punctuation.include?(word[-1]) }
-    count
+    self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
   end
 end

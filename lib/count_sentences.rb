@@ -26,10 +26,7 @@ class String
 
   def count_sentences
   if self.include?("." || "!" || "?")
-    new_count= self.split if self.include?("." || "!" || "?")
-       new_count.delete_if {|string| string.length < 2}
-       binding.pry
-       new_count.count
+    self.split(/\!|\.|\?/).delete_if {|w| w.length < 2}.count
   else return 0
   end
 end

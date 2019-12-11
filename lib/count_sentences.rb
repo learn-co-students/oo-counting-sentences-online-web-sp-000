@@ -27,11 +27,11 @@ class String
   end
 
   def count_sentences
-    # self.scan(/\w[!.?]/).count 
-    self.split(/\.|\?|\!/).delete_if  do |w| 
-      w.size < 2 
-      binding.pry
-    end.size
+    self.scan(/\w[!.?]/).count 
+    # self.split(/\.|\?|\!/).delete_if  do |w| 
+    #   w.size < 2 
+    #   # binding.pry
+    # end.size
   end
   
 end

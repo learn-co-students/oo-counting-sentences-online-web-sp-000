@@ -7,14 +7,16 @@ class String
   end
 
   def question?
-
+    self.end_with?("?")
   end
 
   def exclamation?
-
+    self.end_with?("!")
   end
 
   def count_sentences
-
+    #self.split([[:punct:]]).count works for all but complex sentences
+    self.split(/\.+|\!+|\?+/).count
+    #binding.pry
   end
 end

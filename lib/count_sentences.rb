@@ -28,6 +28,6 @@ class String
 
   def count_sentences
     #binding.pry
-    self.split(/\.|\!|\?/).delete_if {|space| space == " " }.count
+    self.split(/\.|\!|\?/).delete_if {|sentence| sentence.size < 2 }.count
   end
 end

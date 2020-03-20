@@ -27,9 +27,7 @@ class String
   end
 
   def count_sentences
-    
-  # string.split
-  #   string.count('.!?')
-
+    #binding.pry
+    self.split(/\.|\!|\?/).delete_if {|space| space == " " }.count
   end
 end

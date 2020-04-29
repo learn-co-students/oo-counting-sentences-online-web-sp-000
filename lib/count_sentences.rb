@@ -30,6 +30,5 @@ class String
     split_str = self.split(/[.|?|!]/)
     split_str.reject! { |e| e.to_s.empty? }
     split_str.length
-
   end
 end

@@ -3,12 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    if self.end_with? "."
-      true
-    else
-      self.end_with? "?" || "!"
-      false
-    end
+    self.end_with?"."
   end
 
   def question?
@@ -34,7 +29,7 @@ end
   end
 
   def count_sentences_words
-    self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size 
+    self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size
   end
 
 end

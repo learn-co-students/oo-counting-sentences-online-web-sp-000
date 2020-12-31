@@ -10,20 +10,18 @@ class String
     self.end_with?("?")
   end
 
-  def exclamation?
-    self.end_with?("!")
   end
-
-  def count_sentences
-    sentences = self.split("."|| "!"|| "?")
-    sentences.count 
+ c  def exclamation?
+    self.end_with?("!")
+omplex_String
+    complex_String = (self.split("."|| "!"|| "?")
+    #binding.pry 
+    complex_String.count 
     
-    #If an argument is given, counts the number of elements which equal obj using ==.
+   
     
-    
-    
-    if sentences.include? ""
-      puts sentences.length 
+    if (complex_String.include? "" 
+      puts complex_String.length 
     end  
   end
 end

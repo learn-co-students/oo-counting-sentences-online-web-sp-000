@@ -16,11 +16,12 @@ class String
   
   
   def count_sentences
-    complex_String = self.split("."|| "!"|| "?")
-    return complex_String.count 
-    if complex_String.include "" || self.end_with?("  ")
-      puts complex_String 
-     return complex_String.length 
+    complex_String = self.split("."|| "!"|| "?" || ",")
+    binding.pry 
+    if complex_String.include? "" || self.end_with?("  ")
+      binding.pry 
+     return complex_String.lengh
+     binding.pry 
   end
-end 
+end
 end  

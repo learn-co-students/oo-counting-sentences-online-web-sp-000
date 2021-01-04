@@ -17,9 +17,10 @@ class String
   
   def count_sentences
     complex_String = self.split("."|| "!"|| "?")
-    puts complex_String.count 
-     if (complex_String.include? "")
-      return complex_String.length 
-  end 
+    return complex_String.count 
+    if complex_String.include "" || self.end_with?("  ")
+      puts complex_String 
+     return complex_String.length 
+  end
 end 
 end  

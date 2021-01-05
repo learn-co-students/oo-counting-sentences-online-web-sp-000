@@ -11,17 +11,14 @@ class String
   end
  
    def exclamation?
-    self.end_with?("!")
+    self.end_with?("!") 
   end 
   
   
   def count_sentences
-    complex_String = self.split("."|| "!"|| "?" || ",")
-    binding.pry 
-    if complex_String.include? "" || self.end_with?("  ")
-      binding.pry 
-     return complex_String.lengh
-     binding.pry 
-  end
+    string_array = self.split(/\.|!|\?/)
+    updated_array = string_array.reject { |c| c.empty?}
+    puts updated_array 
+    return updated_array.length
 end
-end  
+end

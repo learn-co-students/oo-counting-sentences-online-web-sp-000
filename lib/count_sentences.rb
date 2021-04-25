@@ -12,7 +12,7 @@ class String
 #
 #
   def question?
-    if self.ends_with?("?")
+    if self.end_with?("?")
       true 
     else
       false
@@ -21,7 +21,11 @@ class String
 #
 #
   def exclamation?
-
+     if self.end_with?("!")
+      true 
+    else
+      false
+    end
   end
 #
 #

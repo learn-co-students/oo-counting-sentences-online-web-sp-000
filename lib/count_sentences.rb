@@ -28,11 +28,8 @@ class String
   end
 
   def count_sentences
-     if self.scan(/^*[?|!|.][^...|,]/) ? true : false
-       self.split
-       self.count
-    else
-      nil
+     self.scan(/^*[?|!|.][^...|,]/) ? true : false
+       
   end
   
   

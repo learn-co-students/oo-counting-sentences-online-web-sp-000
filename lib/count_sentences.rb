@@ -9,8 +9,8 @@ class String
       false 
     end 
   end
-#
-#
+
+
   def question?
     if self.end_with?("?")
       true 
@@ -18,20 +18,17 @@ class String
       false
     end
   end
-#
-#
+
   def exclamation?
- 
-  end
-#
-#
-  def count_sentences
-    self_count = []
-    if self.end_with?("." || "?" || "!")
-      self.split
-      self.count
+    if self.end_with?("!")
+      true 
+    else
+      false
     end
-    
+  end
+
+  def count_sentences
+    self.scan(/^*[?|!|.][^...|,]/) ? true : false
   end
   
   

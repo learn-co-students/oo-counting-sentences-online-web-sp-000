@@ -28,7 +28,7 @@ class String
   end
 
   def count_sentences
-     self.scan(/^*[?|!|.][^...|,]/).split.count
+     self.scan(/^*[?|!|.][^...|,]/).map.split.count
   end
   
   
